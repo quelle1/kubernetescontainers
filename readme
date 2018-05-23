@@ -1,0 +1,50 @@
+docker pull quelle/etcd-amd64:3.0.17 
+docker pull quelle/k8s-dns-kube-dns-amd64:1.14.4 
+docker pull quelle/k8s-dns-sidecar-amd64:1.14.4
+docker pull quelle/kube-addon-manager:v6.5
+docker pull quelle/kube-apiserver-amd64:v1.10.0
+docker pull quelle/kube-controller-manager-amd64:v1.10.0
+docker pull quelle/k8s-dns-dnsmasq-nanny-amd64:1.14.4 
+
+docker save -o etcd-amd64_3.0.17.tar quelle/etcd-amd64:3.0.17
+docker save -o k8s-dns-kube-dns-amd64_1.14.4.tar quelle/k8s-dns-kube-dns-amd64:1.14.4
+docker save -o k8s-dns-sidecar-amd64_1.14.4.tar quelle/k8s-dns-sidecar-amd64:1.14.4
+docker save -o kube-addon-manager_v6.5.tar quelle/kube-addon-manager:v6.5
+docker save -o kube-apiserver-amd64_v1.10.0.tar quelle/kube-apiserver-amd64:v1.10.0
+docker save -o kube-controller-manager-amd64_v1.10.0.tar quelle/kube-controller-manager-amd64:v1.10.0
+docker save -o k8s-dns-dnsmasq-nanny-amd64_1.14.4.tar quelle/k8s-dns-dnsmasq-nanny-amd64:1.14.4
+docker save -o
+docker save -o
+
+docker load -i etcd-amd64_3.0.17.tar
+docker load -i k8s-dns-kube-dns-amd64_1.14.4.tar
+docker load -i k8s-dns-sidecar-amd64_1.14.4.tar
+docker load -i kube-addon-manager_v6.5.tar
+docker load -i kube-apiserver-amd64_v1.10.0.tar
+docker load -i kube-controller-manager-amd64_v1.10.0.tar
+docker load -i k8s-dns-dnsmasq-nanny-amd64_1.14.4.tar
+docker load -i
+docker load -i
+
+docker tag quelle/etcd-amd64:3.0.17 gcr.io/google_containers/etcd-amd64:3.0.17
+docker tag quelle/k8s-dns-kube-dns-amd64:1.14.4  k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.4
+docker tag quelle/k8s-dns-sidecar-amd64:1.14.4 k8s.gcr.io/k8s-dns-sidecar-amd64:1.14.4
+docker tag quelle/kube-addon-manager:v6.5 gcr.io/google_containers/kube-addon-manager:v6.5
+docker tag quelle/kube-apiserver-amd64:v1.10.0 gcr.io/google_containers/kube-apiserver-amd64:v1.10.0
+docker tag quelle/kube-controller-manager-amd64:v1.10.0 gcr.io/google_containers/kube-controller-manager-amd64:v1.10.0
+docker tag quelle/k8s-dns-dnsmasq-nanny-amd64:1.14.4 k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.14.4
+docker tag
+docker tag
+docker tag
+
+                  
+kube-proxy-amd64_v1.10.0
+     kubernetes-dashboard-amd64_v1.8.1
+        kube-scheduler-amd64_v1.10.0
+             pause-amd64_3.0
+
+
+
+
+
+
