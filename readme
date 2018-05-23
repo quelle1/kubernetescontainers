@@ -9,6 +9,7 @@ docker pull quelle/kube-proxy-amd64:v1.10.0
 docker pull quelle/kube-scheduler-amd64:v1.10.0
 docker pull quelle/kubernetes-dashboard-amd64:v1.8.1
 docker pull quelle/pause-amd64:3.0
+docker pull quelle/storage-provisioner:v1.8.0
 docker save -o etcd-amd64_3.0.17.tar quelle/etcd-amd64:3.0.17
 docker save -o k8s-dns-kube-dns-amd64_1.14.4.tar quelle/k8s-dns-kube-dns-amd64:1.14.4
 docker save -o k8s-dns-sidecar-amd64_1.14.4.tar quelle/k8s-dns-sidecar-amd64:1.14.4
@@ -20,7 +21,7 @@ docker save -o kube-proxy-amd64_v1.10.0.tar quelle/kube-proxy-amd64:v1.10.0
 docker save -o kube-scheduler-amd64_v1.10.0.tar quelle/kube-scheduler-amd64:v1.10.0
 docker save -o kubernetes-dashboard-amd64_v1.8.1.tar quelle/kubernetes-dashboard-amd64:v1.8.1
 docker save -o pause-amd64_3.0.tar  quelle/pause-amd64:3.0
-docker save -o
+docker save -o storage-provisioner_v1.8.0.tar  quelle/storage-provisioner:v1.8.0
 docker load -i etcd-amd64_3.0.17.tar
 docker load -i k8s-dns-kube-dns-amd64_1.14.4.tar
 docker load -i k8s-dns-sidecar-amd64_1.14.4.tar
@@ -32,7 +33,7 @@ docker load -i kube-proxy-amd64_v1.10.0.tar
 docker load -i kube-scheduler-amd64_v1.10.0.tar
 docker load -i kubernetes-dashboard-amd64_v1.8.1.tar
 docker load -i pause-amd64_3.0.tar
-docker load -i
+docker load -i storage-provisioner_v1.8.0.tar
 docker tag quelle/etcd-amd64:3.0.17 gcr.io/google_containers/etcd-amd64:3.0.17
 docker tag quelle/k8s-dns-kube-dns-amd64:1.14.4  k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.4
 docker tag quelle/k8s-dns-sidecar-amd64:1.14.4 k8s.gcr.io/k8s-dns-sidecar-amd64:1.14.4
@@ -44,7 +45,4 @@ docker tag quelle/kube-proxy-amd64:v1.10.0 k8s.gcr.io/kube-proxy-amd64:v1.10.0
 docker tag quelle/kube-scheduler-amd64:v1.10.0 gcr.io/google_containers/kube-scheduler-amd64:v1.10.0
 docker tag quelle/kubernetes-dashboard-amd64:v1.8.1 gcr.io/google_containers/kubernetes-dashboard-amd64:v1.8.1
 docker tag quelle/pause-amd64:3.0 k8s.gcr.io/pause-amd64:3.0
-docker tag 
-                  
-storage-provisioner_v1.8.0
-gcr.io/k8s-minikube/storage-provisioner:v1.8.0
+docker tag quelle/storage-provisioner:v1.8.0 gcr.io/k8s-minikube/storage-provisioner:v1.8.0        
